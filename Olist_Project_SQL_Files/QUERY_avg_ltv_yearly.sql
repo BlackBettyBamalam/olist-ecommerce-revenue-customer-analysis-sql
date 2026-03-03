@@ -11,8 +11,5 @@ WITH ltv AS (
         year
     ORDER BY revenue_per_customer DESC
 )
-SELECT year,
-    ROUND(AVG(revenue_per_customer), 2) AS avg_ltv
-FROM ltv
-GROUP BY year
-ORDER BY year
+SELECT ROUND(AVG(revenue_per_customer), 2) AS avg_ltv
+FROM ltv;

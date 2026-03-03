@@ -18,7 +18,7 @@ WITH monthly_revenue AS (
     ORDER BY year,
         month
 )
-SELECT ROUND(AVG(revenue), 2) AS average_revenue,
+SELECT ROUND(AVG(revenue), 2) AS average_revenue_per_month,
     year
 FROM monthly_revenue
-GROUP BY year
+GROUP BY year;

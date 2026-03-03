@@ -21,12 +21,9 @@ WITH median AS (
             ORDER BY revenue_per_customer DESC
         ) AS ltv
 )
-SELECT year,
-    ROUND(AVG(revenue_per_customer), 2) AS avg_ltv
+SELECT ROUND(AVG(revenue_per_customer), 2) AS median_ltv
 FROM median
 WHERE rn IN(
         FLOOR((cnt + 1) / 2),
         FLOOR((cnt + 2) / 2)
-    )
-GROUP BY year
-ORDER BY year
+    );
