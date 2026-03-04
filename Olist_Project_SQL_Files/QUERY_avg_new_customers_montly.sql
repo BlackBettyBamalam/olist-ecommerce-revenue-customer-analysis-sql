@@ -8,5 +8,5 @@ WITH customers AS (
     GROUP BY month
     HAVING COUNT(DISTINCT customer_unique_id) > 500
 )
-SELECT AVG(new_customers)
-FROM customers
+SELECT ROUND(AVG(new_customers), 2) AS avg_new_customers_per_month
+FROM customers;

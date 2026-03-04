@@ -4,4 +4,4 @@ SELECT DATE_TRUNC('month', ord.order_purchase_timestamp) AS month,
 FROM olist_customers_dataset cus
     INNER JOIN olist_orders_dataset ord ON ord.customer_id = cus.customer_id
 GROUP BY month
-HAVING COUNT(ord.order_purchase_timestamp) > 500
+HAVING COUNT(ord.order_purchase_timestamp) > 500;

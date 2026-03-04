@@ -14,4 +14,4 @@ GROUP BY year,
     month
 HAVING COUNT(pay.order_id) > 500
 ORDER BY year,
-    month
+    month;

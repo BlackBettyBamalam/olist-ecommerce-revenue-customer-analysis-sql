@@ -5,4 +5,4 @@ FROM olist_order_payments_dataset pay
     INNER JOIN olist_orders_dataset ord ON ord.order_id = pay.order_id
 WHERE ord.order_status = 'delivered'
 GROUP BY year
-HAVING COUNT(DISTINCT ord.order_approved_at) > 500
+HAVING COUNT(DISTINCT ord.order_approved_at) > 500;

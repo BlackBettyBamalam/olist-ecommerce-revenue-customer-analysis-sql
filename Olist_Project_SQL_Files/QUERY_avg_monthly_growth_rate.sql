@@ -23,4 +23,4 @@ monthly_growth AS (
 )
 SELECT CONCAT(ROUND(AVG(growth_rate) * 100, 2), '%') AS avg_monthly_growth_percent
 FROM monthly_growth
-WHERE growth_rate IS NOT NULL
+WHERE growth_rate IS NOT NULL;
