@@ -40,7 +40,7 @@ Primary tables used in this analysis:
 
 The schema for the tables used in this project looks like this:
 
- ![Table Schema](olist_chart_images/olist_table_schema.png)
+ ![Table Schema](docs/olist_table_schema.png)
 
  ## Repository Structure
 
@@ -77,7 +77,7 @@ project/
 
 **Average Monthly Revenue Growth Rate:** 14.97%
 
-![Revenue Per Month](olist_chart_images/revenue_per_month.png)
+![Revenue Per Month](charts/revenue_per_month.png)
 
 Revenue grew rapidly throughout 2017 before plateauing in 2018.  
 This pattern suggests strong marketplace adoption during the earlier growth phase, followed by a stabilization period in 2018.
@@ -90,7 +90,7 @@ The average order value is **153.07 BRL** over the entire measured period. It is
 
 ### Returning Customers
 
-![Percentage of Returning Customers](olist_chart_images/percentage_of_returning_customers.png)
+![Percentage of Returning Customers](charts/percentage_of_returning_customers.png)
 
 While revenue growth slowed in 2018, the percentage of returning customers continued to increase. This suggests the marketplace may have been transitioning from rapid user acquisition toward improving customer retention.
 
@@ -103,7 +103,7 @@ That said, according to Decile's *2023 Ecommerce Benchmarking Guide* the average
 
 The median LTV is significantly lower than the average, indicating that the distribution of customer spending is highly skewed. This can be seen in the chart below.
 
-![Distribution of Customer LTV](olist_chart_images/distribution_of_customer_ltv.png)
+![Distribution of Customer LTV](charts/distribution_of_customer_ltv.png)
 
 Revenue is highly concentrated among a small portion of customers.  
 The top 20% of customers generate approximately 54% of total revenue.
@@ -112,13 +112,13 @@ The top 20% of customers generate approximately 54% of total revenue.
 
 ### Revenue by Product Category
 
-![Top 10 Product Categories](olist_chart_images/revenue_of_top_10_product_categories.png)
+![Top 10 Product Categories](charts/revenue_of_top_10_product_categories.png)
 
 Health & Beauty, Watches & Gifts, and Bed & Bath are the top 3 revenue-generating categories.
 
 ### Distribution of Revenue by Product
 
-![Distribution of Revenue per Product](olist_chart_images/distribution_of_revenue_per_product.png)
+![Distribution of Revenue per Product](charts/distribution_of_revenue_per_product.png)
 
 The top 10% of products generate 60.85% of all revenue.
 
