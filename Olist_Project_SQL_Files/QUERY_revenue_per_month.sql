@@ -1,3 +1,4 @@
+-- Revenue per month
 SELECT SUM(pay.payment_value) AS revenue,
     EXTRACT(
         MONTH

@@ -1,3 +1,4 @@
+-- Number of customers who return after their first purchase
 -- CTE 1: find first purchase of each unique customer
 WITH first_purchase AS (
     SELECT cus.customer_unique_id,

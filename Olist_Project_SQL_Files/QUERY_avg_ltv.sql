@@ -1,4 +1,4 @@
--- Average customer lifetime value (LTV) by year
+-- Average customer lifetime value (LTV)
 WITH ltv AS (
     SELECT cus.customer_unique_id,
         SUM(pay.payment_value) AS revenue_per_customer

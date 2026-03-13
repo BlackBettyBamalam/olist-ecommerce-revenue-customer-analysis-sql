@@ -1,4 +1,4 @@
--- revenue by product category
+-- Revenue by product category
 SELECT prod.product_category_name AS category,
     SUM(items.price) AS revenue,
     SUM(SUM(items.price)) OVER () AS total_revenue

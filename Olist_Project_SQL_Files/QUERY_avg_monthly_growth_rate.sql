@@ -1,4 +1,4 @@
--- What is the Average Monthly Growth Rate of revenue?
+-- Average monthly growth rate of revenue
 WITH monthly_revenue AS (
     SELECT DATE_TRUNC('month', ord.order_purchase_timestamp) AS month,
         SUM(pay.payment_value) AS revenue

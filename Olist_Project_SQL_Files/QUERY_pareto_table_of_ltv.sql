@@ -1,4 +1,5 @@
--- Pareto table of LTV vs revenue %
+-- Pareto table of LTV in 1/10 groups 
+-- (how much of revenue is top 10% of spenders responsible for?)
 WITH ltv AS (
     SELECT cus.customer_unique_id AS unique_customer,
         SUM(pay.payment_value) AS ltv

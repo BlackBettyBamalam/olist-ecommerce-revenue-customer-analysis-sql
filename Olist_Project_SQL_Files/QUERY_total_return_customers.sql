@@ -1,4 +1,4 @@
--- return customers %
+-- Total number of customers who purchase more than once (and % of total customers)
 SELECT CONCAT(
         ROUND(
             (

@@ -1,4 +1,4 @@
--- total revenue(s)
+-- Total revenue and breakdown of total revenue
 WITH payment_rev AS (
     SELECT ord.order_id,
         SUM(pay.payment_value) AS revenue_per_order,

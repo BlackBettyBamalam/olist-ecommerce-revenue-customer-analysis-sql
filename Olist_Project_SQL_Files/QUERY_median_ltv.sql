@@ -1,4 +1,4 @@
--- median customer lifetime value (LTV) by year
+-- Median customer lifetime value (LTV)
 WITH median AS (
     SELECT unique_customer,
         revenue_per_customer,
