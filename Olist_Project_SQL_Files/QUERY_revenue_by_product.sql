@@ -21,6 +21,13 @@ ranked AS (
     FROM product_revenue
 )
 SELECT decile AS product_percentile,
+    CONCAT(
+        ROUND(
+            SUM(revenue_by_product) / SUM(SUM(revenue_by_product)) OVER () * 100,
+            2
+        ),
+        '%'
+    ) AS percent_of_total_revenue,
     SUM(revenue_by_product) AS revenue_by_percentile
 FROM ranked
 GROUP BY product_percentile
