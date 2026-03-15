@@ -4,8 +4,8 @@
 # VS Code
 .vscode/
 
-# Excel
-olist_sql_query_outputs/~$olist_query_results_and_charts_workbook.xlsx
+# Temporary Excel Files
+~$*
 
 # Node (if you use it)
 node_modules/
